@@ -8,9 +8,18 @@
 
 	</h1>
 	<%= simple_form_for @pic do |f|%>
+
+
 	
 		<label>
 		<%= f.input :lesson, :label => 'Your latest lesson', :placeholder => '1, 2, etc.'%>
+
+		<br/> 
+
+		<%= f.input :image, :label => 'Upload Image'%>
+
+		<br/> 
+
 		<%= f.input :emotion, :label => 'How did you feel?', :placeholder => 'Happy, Confused, Brilliant'%>
 		<%= f.input :learned, :label => 'What did you learn?', :placeholder => 'HTML5, CSS3, Rails, Github, etc'%>
 
